@@ -69,12 +69,12 @@ pref("network.dnsCacheEntries",400);
 
 // Número máximo de segundos para almacenar en caché las entradas DNS.
 
-pref("network.dnsCacheExpiration,240);
-pref("network.dnsCacheExpirationGracePeriod,240);
+pref("network.dnsCacheExpiration",240);
+pref("network.dnsCacheExpirationGracePeriod",240);
 
 // Habilita el cache
 
-pref("network.http.use-cache,240);
+pref("network.http.use-cache",240);
 
 // habilitar el link prefetching
 
@@ -88,6 +88,7 @@ pref("privacy.trackingprotection.enabled",true);
 // Evitar que Iceweaserl muestre los PDF
 
 pref("PDFjs.disable",true);
+user_pref("plugin.disable_full_page_plugin_for_types", "application/pdf");
 
 // Hacemos que el navegador autodetecte configuracion de la redes
 
@@ -96,4 +97,10 @@ pref("network.proxy.type",5);
 // Buscador por default 
 
 pref("browser.search.defaultenginename","DuckDuckGo");
-pref("browser.search.selectedEngine;DuckDuckGo");
+user_pref("browser.search.selectedEngine";DuckDuckGo");
+
+# Determina la forma en que se aceptaran las cookies, en 2 solo acepta sesion actual
+
+user_pref("network.cookie.lifetimePolicy", 2);
+
+
