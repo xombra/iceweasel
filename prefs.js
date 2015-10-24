@@ -97,7 +97,7 @@ pref("network.proxy.type",5);
 // Buscador por default 
 
 pref("browser.search.defaultenginename","DuckDuckGo");
-user_pref("browser.search.selectedEngine";"DuckDuckGo");
+user_pref("browser.search.selectedEngine","DuckDuckGo");
 
 //Determina la forma en que se aceptaran las cookies en dos solo acepta sesion actual
 
