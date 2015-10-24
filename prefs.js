@@ -74,11 +74,11 @@ pref("network.dnsCacheExpirationGracePeriod",240);
 
 // Habilita el cache
 
-pref("network.http.use-cache",240);
+pref("network.http.use-cache",true);
 
 // habilitar el link prefetching
 
-pref("network. prefetch-next",true);
+pref("network.prefetch-next",true);
 
 // No permitir el tracking
 
@@ -97,10 +97,18 @@ pref("network.proxy.type",5);
 // Buscador por default 
 
 pref("browser.search.defaultenginename","DuckDuckGo");
-user_pref("browser.search.selectedEngine";DuckDuckGo");
+user_pref("browser.search.selectedEngine";"DuckDuckGo");
 
-# Determina la forma en que se aceptaran las cookies, en 2 solo acepta sesion actual
+# Determina la forma en que se aceptaran las cookies en dos solo acepta sesion actual
 
-user_pref("network.cookie.lifetimePolicy", 2);
+user_pref("network.cookie.lifetimePolicy",2);
+
+# Mejora en Velocidad de peticion
+
+pref("network.http.pipelining",true);
+pref("network.http.proxy.pipelining",true);
+pref("network.http.pipelining.maxrequests",32);
+
+
 
 
