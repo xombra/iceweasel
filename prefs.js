@@ -84,6 +84,7 @@ pref("network.prefetch-next",true);
 
 pref("privacy.donottrackheader.enabled",true);
 pref("privacy.trackingprotection.enabled",true);
+pref("privacy.donottrackheader.value", 1);
 
 // Evitar que Iceweaserl muestre los PDF
 
@@ -109,6 +110,20 @@ pref("network.http.pipelining",true);
 pref("network.http.proxy.pipelining",true);
 pref("network.http.pipelining.maxrequests",32);
 
+// Mejora Seguridad
+pref("network.http.pipelining.ssl",true);
+pref("network.http.proxy.pipelining",true);
+
+// se evita filtrar tu verdadera dirección IP
+pref("media.peerconnection.enabled", false);
+pref("media.peerconnection.use_document_iceservers", false);
 
 
+// Desactivar Pocket
+pref("browser.pocket.api", '');
+pref("browser.pocket.enabled", false);
+pref("browser.pocket.site, '');
 
+// Desactivar WebGL (Riesgo de seguridad
+// https://security.stackexchange.com/questions/13799/is-webgl-a-security-concern
+pref("webgl.disabled", true);
