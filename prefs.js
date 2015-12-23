@@ -122,7 +122,7 @@ pref("media.peerconnection.use_document_iceservers", false);
 // Desactivar Pocket
 pref("browser.pocket.api", "");
 pref("browser.pocket.enabled", false);
-pref("browser.pocket.site, "");
+pref("browser.pocket.site", "");
 
 // Desactivar WebGL (Riesgo de seguridad
 // https://security.stackexchange.com/questions/13799/is-webgl-a-security-concern
