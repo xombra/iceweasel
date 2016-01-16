@@ -99,6 +99,7 @@ pref("network.proxy.type",5);
 
 pref("browser.search.defaultenginename","DuckDuckGo");
 user_pref("browser.search.selectedEngine","DuckDuckGo");
+pref("keyword.URL","https://duckduckgo.com/?t=lm&q=");
 
 //Determina la forma en que se aceptaran las cookies en dos solo acepta sesion actual
 
@@ -127,3 +128,10 @@ pref("browser.pocket.site", "");
 // Desactivar WebGL (Riesgo de seguridad
 // https://security.stackexchange.com/questions/13799/is-webgl-a-security-concern
 pref("webgl.disabled", true);
+
+// Evitar el envio de referer
+
+pref("network.http.referer.trimmingPolicy", 1);
+pref("network.http.referer.XOriginPolicy", 1);
+pref("network.http.sendRefererHeader", 0);
+
