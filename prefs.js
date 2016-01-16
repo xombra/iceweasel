@@ -137,7 +137,7 @@ pref("webgl.disabled", true);
 
 pref("network.http.referer.trimmingPolicy", 1);
 pref("network.http.referer.XOriginPolicy", 1);
-pref("network.http.sendRefererHeader", 1);
+pref("network.http.sendRefererHeader", 2);
 
 // deshabilitar completamente Hello
 
