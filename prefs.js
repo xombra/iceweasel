@@ -142,3 +142,10 @@ pref("network.http.sendRefererHeader", 0);
 // deshabilitar completamente Hello
 
 pref("loop.enabled", false);
+
+// Deshabilitad por obsoleto
+// https://community.qualys.com/blogs/securitylabs/2013/03/19/rc4-in-tls-is-broken-now-what
+//https://community.qualys.com/thread/14655
+ 
+pref("security.ssl3.dhe_rsa_aes_128_sha", false);
+pref("security.ssl3.dhe_rsa_aes_256_sha", true);
