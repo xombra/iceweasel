@@ -3,16 +3,16 @@
 // Pagina de Inicio
 pref("browser.startup.homepage", "http://xombra.com");
 
-// * Activar y desactivar Plugin (Flash y Java) 
+// Activar y desactivar Plugin (Flash y Java) 
 // Es bueno desactivarlo en equipos con menos de 512 RAM | 
-//Además le da un poco mas de seguridad sin importar el tamaño de 
+// Además le da un poco mas de seguridad sin importar el tamaño de 
 // RAM que se posea
 
 pref("plugin.state.flash",0);
 pref("plugin.state.java",0);
 
 // animación al descargar:
-//Es bueno desactivarlo en equipos con menos de 512 RAM
+// Opcion recomendada desactivarlo en equipos con menos de 512 RAM
 
 pref("browser.download.animateNotifications",false);
 
@@ -119,7 +119,6 @@ pref("network.http.proxy.pipelining",true);
 pref("media.peerconnection.enabled", false);
 pref("media.peerconnection.use_document_iceservers", false);
 
-
 // Desactivar Pocket
 pref("browser.pocket.api", "");
 pref("browser.pocket.enabled", false);
@@ -135,3 +134,6 @@ pref("network.http.referer.trimmingPolicy", 1);
 pref("network.http.referer.XOriginPolicy", 1);
 pref("network.http.sendRefererHeader", 0);
 
+// deshabilitar completamente Hello
+
+pref("loop.enabled", false);
