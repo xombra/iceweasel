@@ -82,6 +82,7 @@ pref("network.prefetch-next",true);
 
 // No permitir el tracking
 
+pref("geo.enabled", false);
 pref("privacy.donottrackheader.enabled",true);
 pref("privacy.trackingprotection.enabled",true);
 pref("privacy.donottrackheader.value", 1);
