@@ -8,17 +8,20 @@ pref("browser.startup.homepage", "http://xombra.com");
 // Además le da un poco mas de seguridad sin importar el tamaño de 
 // RAM que se posea
 
-pref("plugin.state.flash",0);
-pref("plugin.state.java",0);
+pref("plugin.state.flash", 0);
+pref("plugin.state.java", 0);
+
+// autocompletado
+user_pref("browser.urlbar.autofill", true);
 
 // animación al descargar:
 // Opcion recomendada desactivarlo en equipos con menos de 512 RAM
 
-pref("browser.download.animateNotifications",false);
+pref("browser.download.animateNotifications" ,false);
 
 // Activar por default la navegación privada
 
-pref("browser.privatebrowsing.autostart",true);
+pref("browser.privatebrowsing.autostart", true);
 
 // Activar por default Borrar todo el historial el usuario tendra todas las opciones tildadas:
 
