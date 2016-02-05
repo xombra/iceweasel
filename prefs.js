@@ -156,5 +156,5 @@ pref("loop.enabled", false);
 pref("security.ssl3.dhe_rsa_aes_128_sha", false);
 pref("security.ssl3.dhe_rsa_aes_256_sha", true);
 
-# Mostrar siempre http: en la barra de direcciones
+// Mostrar siempre http: en la barra de direcciones
 user_pref("browser.urlbar.trimURLs", false);
