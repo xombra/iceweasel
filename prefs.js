@@ -106,6 +106,9 @@ user_pref("browser.search.selectedEngine","DuckDuckGo");
 pref("keyword.URL","https://duckduckgo.com/?t=lm&q=");
 pref("browser.search.hiddenOneOffs","Yahoo,Bing,Diccionario RAE,eBay,Twitter");
 
+// Abre una nueva ventana en la busqueda
+user_pref("browser.search.openintab", true);
+
 //Determina la forma en que se aceptaran las cookies en dos solo acepta sesion actual
 
 user_pref("network.cookie.lifetimePolicy",2);
