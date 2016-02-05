@@ -101,7 +101,7 @@ pref("network.proxy.type",5);
 pref("browser.search.defaultenginename","DuckDuckGo");
 user_pref("browser.search.selectedEngine","DuckDuckGo");
 pref("keyword.URL","https://duckduckgo.com/?t=lm&q=");
-pref("browser.search.hiddenOneOffs","DuckDuckGo,Startpage");
+pref("browser.search.hiddenOneOffs","Yahoo,Bing,Diccionario RAE,eBay,Twitter");
 
 //Determina la forma en que se aceptaran las cookies en dos solo acepta sesion actual
 
