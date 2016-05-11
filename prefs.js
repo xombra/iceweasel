@@ -136,7 +136,6 @@ pref("browser.pocket.enabled", false);
 pref("browser.pocket.site", "");
 pref("browser.pocket.useLocaleList", false);
 
-
 // Desactivar WebGL (Riesgo de seguridad
 // https://security.stackexchange.com/questions/13799/is-webgl-a-security-concern
 
@@ -161,3 +160,7 @@ pref("security.ssl3.dhe_rsa_aes_256_sha", true);
 
 // Mostrar siempre http: en la barra de direcciones
 user_pref("browser.urlbar.trimURLs", false);
+
+// para evitar saltos de los videos Flash en Youtube y otros
+pref("browser.sessionstore.interval", 20000);
+
