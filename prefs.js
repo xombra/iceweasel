@@ -165,7 +165,7 @@ user_pref("browser.urlbar.trimURLs", false);
 pref("browser.sessionstore.interval", 20000);
 
 // Menos uso de recursos
-user_pref("browser.tabs.animatee", false);
+user_pref("browser.tabs.animate", false);
 user_pref("browser.preferences.animateFadeIn", false);
 user_pref("reader.parse-on-load.enabled", false);
 user_pref("reader.parse-on-load.force-enabled", false);
