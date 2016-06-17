@@ -15,7 +15,7 @@ pref("plugin.state.java", 0);
 user_pref("browser.urlbar.autofill", true);
 
 // animación al descargar:
-// Opcion recomendada desactivarlo en equipos con menos de 512 RAM
+// Opcion recomendada desactivarlo en equipos con menos de 1GB RAM
 
 pref("browser.download.animateNotifications" ,false);
 
@@ -164,3 +164,8 @@ user_pref("browser.urlbar.trimURLs", false);
 // para evitar saltos de los videos Flash en Youtube y otros
 pref("browser.sessionstore.interval", 20000);
 
+// Menos uso de recursos
+user_pref("browser.tabs.animatee", false);
+user_pref("browser.preferences.animateFadeIn", false);
+user_pref("reader.parse-on-load.enabled", false);
+user_pref("reader.parse-on-load.force-enabled", false);
