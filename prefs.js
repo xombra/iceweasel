@@ -169,3 +169,15 @@ user_pref("browser.tabs.animate", false);
 user_pref("browser.preferences.animateFadeIn", false);
 user_pref("reader.parse-on-load.enabled", false);
 user_pref("reader.parse-on-load.force-enabled", false);
+
+// Si posee 4 GB de RAM o mas habilitar
+// pref("gfx.xrender.enabled",true);
+// pref("layers.acceleration.force-enabled",true);
+
+// Si Posee menos de 4GB deshabilitar
+// pref("gfx.xrender.enabled",false);
+// pref("layers.acceleration.force-enabled",false);
+
+
+
+
