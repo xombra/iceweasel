@@ -53,6 +53,8 @@ pref("privacy.sanitize.sanitizeOnShutdown",true);
 
 pref("privacy.popups.policy", 1);
 pref("dom.disable_open_during_load", true);
+pref("dom.event.clipboardevents.enabled", false);
+pref("dom.event.contextmenu.enabled", false);
 pref("browser.popups.showPopupBlocker", true);
 
 // Evitar que almacene y/o recuerde data de formularios:
@@ -65,10 +67,15 @@ pref("services.sync.prefs.sync.signon.rememberSignons",false)
 
 pref("browser.safebrowsing.malware.enabled",true);
 pref("browser.safebrowsing.enabled",true);
+pref("browser.send_pings", false);
+pref("browser.cache.disk.enable", false);
+pref("browser.cache.disk_cache_ssl", false);
+pref("browser.cache.offline.enable", false);
 
 // Maxima de DNS cache
 
-pref("network.dnsCacheEntries",400);
+pref("network.dnsCacheEntries",100);
+pref("network.websocket.enabled", false);
 
 // Número máximo de segundos para almacenar en caché las entradas DNS.
 
@@ -86,6 +93,7 @@ pref("network.prefetch-next",true);
 // No permitir el tracking
 
 pref("geo.enabled", false);
+pref("geo.wifi.logging.enabled", false);
 pref("privacy.donottrackheader.enabled",true);
 pref("privacy.trackingprotection.enabled",true);
 pref("privacy.donottrackheader.value", 1);
@@ -146,7 +154,8 @@ pref("webgl.disabled", true);
 
 pref("network.http.referer.trimmingPolicy", 1);
 pref("network.http.referer.XOriginPolicy", 1);
-pref("network.http.sendRefererHeader", 2);
+pref("network.http.sendRefererHeader", 0);
+pref("network.http.sendSecureXSiteReferrer", false);
 
 // deshabilitar completamente Hello
 
@@ -161,3 +170,4 @@ pref("security.ssl3.dhe_rsa_aes_256_sha", true);
 
 // Mostrar siempre http: en la barra de direcciones
 user_pref("browser.urlbar.trimURLs", false);
+pref("browser.formfill.enable", false);
