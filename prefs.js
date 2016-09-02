@@ -178,6 +178,90 @@ user_pref("reader.parse-on-load.force-enabled", false);
 // pref("gfx.xrender.enabled",false);
 // pref("layers.acceleration.force-enabled",false);
 
+// Agregados Sep 2016
+
+// This attribute contains one or more URIs send a POST request to when the user clicks the link. -> track visitors clicks.
+
+pref('browser.send_pings', false);
+
+// Deshablita Cache  
+
+pref('browser.cache.disk.enable', false);
+pref('browser.cache.disk_cache_ssl', false);
+pref('browser.cache.offline.enable', false);
+
+// deshabilita la ram caché para ahorrar carga de imagenes
+
+pref('browser.cache.memory.enable', false);
+
+// evita la precarga de web pages, ahorrando ancho de banda
+
+pref('beacon.enabled', false);
+
+// Inhabilita redirección geográfica
+
+pref('geo.wifi.logging.enabled', false);
+pref('browser.search.geoip.url', '');
+pref('browser.search.geoSpecificDefaults', false);
+pref('browser.search.geoSpecificDefaults.url', '');
+
+// deshabilita la carga de webs patrocinadoras de Mozilla
+
+pref('browser.newtabpage.directory.ping', '');
+pref('browser.newtabpage.directory.source', '');
+
+// Impedir sea determinado el pais de origen
+
+pref('browser.search.countryCode', '');
+pref('browser.search.region', '');
+
+// genera ruído en en tu ubicación geográfica
+
+pref('intl.accept_languages;en-US', 'en;q=0.5');
+
+// habilita la página en blanco para ahorrar procesos en segundo plano
+
+pref('browser.newtab.url', 'about:blank');
+
+// quitar a los developers posibilidad de control sobre menú al hacer clic derecho
+
+pref('dom.event.clipboardevents.enabled', false);
+
+// deshabilitar sincronizacion (Sync Services)
+
+pref('services.sync.enabled', false);
+pref('services.sync.sendVersionInf', false);
+
+// Disable "Social Media Integration"
+
+pref('social.remote-install.enabled', false);
+pref('social.toast-notifications.enabled', false);
+pref('social.directories', '');
+pref('social.whitelist', '');
+
+// "SOCKS Remote DNS"
+
+pref('network.proxy.socks_remote_dns', true);
+
+// Disable "Camera Face Detection"
+
+pref('camera.control.face_detection.enabled', false);
+
+// Disable "Device Statistics"
+
+pref('device.sensors.enabled', false);
+
+// Disable "Remote WiFi Scan"
+
+pref('devtools.remote.wifi.scan', false);
+
+// Disable Search Suggestion
+
+pref('browser.search.suggest.enabled', false);
+
+
+// 
+pref('browser.formfill.enable', false);
 
 
 
