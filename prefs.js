@@ -90,6 +90,19 @@ pref("network.http.use-cache",true);
 
 pref("network.prefetch-next",true);
 
+// Carga especulativa de sitios web, más rápido pero inseguro
+pref("network.http.speculative-parallel-limit",0);
+
+// Evitar los ads de Mozilla en página de inicio de Firefox 
+pref("browser.aboutHomeSnippets.updateUrl", "");
+
+// Los metadatos de tus extensiones son enviados a Mozilla
+pref("extensions.getAddons.cache.enabled", false);
+
+// Evita enviar datos y reportes a Mozilla, sea información de tu hardware,
+// user agent, reportes de salud y telemetria.
+pref("browser.selfsupport.url", "");
+
 // No permitir el tracking
 
 pref("geo.enabled", false);
