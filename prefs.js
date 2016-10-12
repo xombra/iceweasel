@@ -239,7 +239,6 @@ pref('dom.event.clipboardevents.enabled', false);
 
 pref('services.sync.enabled', false);
 pref('services.sync.sendVersionInf', false);
-
 // Disable "Social Media Integration"
 
 pref('social.remote-install.enabled', false);
@@ -267,9 +266,14 @@ pref('devtools.remote.wifi.scan', false);
 
 pref('browser.search.suggest.enabled', false);
 
-
 // 
 pref('browser.formfill.enable', false);
+
+// Criptografia
+
+pref('security.OCSP.enabled', '1');
+pref('security.OCSP.require', 'true');
+pref('services.sync.prefs.sync.security.OCSP.require', 'true');
 
 
 
