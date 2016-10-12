@@ -90,6 +90,12 @@ pref("privacy.donottrackheader.enabled",true);
 pref("privacy.trackingprotection.enabled",true);
 pref("privacy.donottrackheader.value", 1);
 
+// Evitar envio de info hacia Mozilla
+pref("datareporting.healthreport.service.firstRun", false);
+pref("datareporting.healthreport.uploadEnabled", false);
+pref("toolkit.telemetry.enabled", false);
+
+
 // Evitar que Iceweaserl muestre los PDF
 
 pref("PDFjs.disable",true);
