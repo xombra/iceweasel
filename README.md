@@ -1,5 +1,5 @@
 # iceweasel
 Configuracion para el navegador (browser) iceweasel, funciona tambien para Firefox
 
-Si las usaras en Firefox debes colocarlas en:
-/usr/lib/firefox/browser/defaults/preferences/prefs.js
+Si las usas en Firefox debes usar un nombre diferente a pref.js, por ejemplo mispref.js y colocarlo en:
+/usr/lib/firefox/browser/defaults/preferences/misprefs.js
