@@ -204,6 +204,8 @@ pref('geo.wifi.logging.enabled', false);
 pref('browser.search.geoip.url', '');
 pref('browser.search.geoSpecificDefaults', false);
 pref('browser.search.geoSpecificDefaults.url', '');
+pref('geo.wifi.logging.enabled', '');
+
 
 // deshabilita la carga de webs patrocinadoras de Mozilla
 
