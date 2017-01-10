@@ -1,7 +1,9 @@
 // prefs.js
+// No es necesario usar todas estas configuraciones, elige las más adecuadas
+// a tus necesidades. Licencia CC BY SA.
 
 // Pagina de Inicio
-pref("browser.startup.homepage", "http://xombra.com");
+pref("browser.startup.homepage", "http://ejemplo.com");
 
 // Activar y desactivar Plugin (Flash y Java) 
 // Es bueno desactivarlo en equipos con menos de 512 RAM | 
@@ -11,19 +13,39 @@ pref("browser.startup.homepage", "http://xombra.com");
 pref("plugin.state.flash", 0);
 pref("plugin.state.java", 0);
 
-// autocompletado
+// El buscador solicita el código de tu pais, elige dejarlo en blanco o ignoralo
+pref("browser.search.countryCode", "");
+
+// El buscador es más preciso si tu región es especificada, dejalo en blanco o por default
+pref("browser.search.region", "");
+
+// autocompletado, evita rellenar casillas con información sensible
 user_pref("browser.urlbar.autofill", true);
 
-// animación al descargar:
+// Deshabilita el JS de manera general, usarios avanzados que no necesiten JS.
+pref("javascript.enabled), false);
+
+// Deshabilita el analisis de los sensores, sitios web pueden leerlos.
+pref("device.sensors.enabled", false);
+
+// Opción para leer el estado de la batería, los sitios web pueden hacerlo...
+pref("dom.battery.enabled", false);
+
+// Deshabilita la detección de rostros de la cámara, pueden espiarte por ahí...
+pref("camera.control.face_detection.enabled)", false);
+
+// animación al descargar, el icono de descarga animado se deshabilita
 // Opcion recomendada desactivarlo en equipos con menos de 512 RAM
 
 pref("browser.download.animateNotifications" ,false);
 
-// Activar por default la navegación privada
+// Activar por default la navegación privada. OJO: No es 100% privada.
 
 pref("browser.privatebrowsing.autostart", true);
 
 // Activar por default Borrar todo el historial el usuario tendra todas las opciones tildadas:
+// Esta opción borra: cache, historial descargas, cookies, datos de formulario, contraseñas
+// sesiones abiertas, configuracion del sitio e historial de navegación.
 
 pref("privacy.cpd.cache", true);
 pref("privacy.cpd.downloads", true);
@@ -36,7 +58,7 @@ pref("privacy.cpd.sessions", true);
 pref("privacy.cpd.siteSettings", true);
 pref("privacy.cpd.history", true);
 
-// Para limpiar cuando se cierre el navegador:
+// Para limpiar cuando se cierre el navegador, elimina todo este contenido al cerrar o reiniciar:
 
 pref("privacy.clearOnShutdown.cache", true);
 pref("privacy.clearOnShutdown.cookies",true);
@@ -49,7 +71,7 @@ pref("privacy.clearOnShutdown.sessions", true);
 pref("privacy.clearOnShutdown.siteSettings",true);
 pref("privacy.sanitize.sanitizeOnShutdown",true);
 
-// Rechazar pop-up
+// Rechazar pop-up, evita abrirlos, normalmente es publicidad molesta:
 
 pref("privacy.popups.policy", 1);
 pref("dom.disable_open_during_load", true);
@@ -93,17 +115,17 @@ pref("network.prefetch-next",true);
 // Carga especulativa de sitios web, más rápido pero inseguro
 pref("network.http.speculative-parallel-limit",0);
 
-// Evitar los ads de Mozilla en página de inicio de Firefox 
+// Evitar los ads de Mozilla en página de inicio de Firefox, ideal para conexiones lentas:
 pref("browser.aboutHomeSnippets.updateUrl", "");
 
-// Los metadatos de tus extensiones son enviados a Mozilla
+// Los metadatos de tus extensiones son enviados a Mozilla, verifica que está en FALSE
 pref("extensions.getAddons.cache.enabled", false);
 
 // Evita enviar datos y reportes a Mozilla, sea información de tu hardware,
 // user agent, reportes de salud y telemetria.
 pref("browser.selfsupport.url", "");
 
-// No permitir el tracking
+// No permitir el tracking, los sitios vigilan tu geolocalizacion, evitalo usando:
 
 pref("geo.enabled", false);
 pref("geo.wifi.logging.enabled", false);
@@ -111,7 +133,7 @@ pref("privacy.donottrackheader.enabled",true);
 pref("privacy.trackingprotection.enabled",true);
 pref("privacy.donottrackheader.value", 1);
 
-// Evitar que Iceweaserl muestre los PDF
+// Evitar que Iceweaserl muestre los PDF, a veces tienen contenido dañino o malware
 
 pref("PDFjs.disable",true);
 user_pref("plugin.disable_full_page_plugin_for_types", "application/pdf");
@@ -120,7 +142,8 @@ user_pref("plugin.disable_full_page_plugin_for_types", "application/pdf");
 
 pref("network.proxy.type",5);
 
-// Buscador por default 
+// Buscador por default, puedes optar por DuckDuckGo o StartPage,
+// la ultima linea borra las opciones de Yahoo, Bing, etc.
 
 pref("browser.search.defaultenginename","DuckDuckGo");
 user_pref("browser.search.selectedEngine","DuckDuckGo");
@@ -134,23 +157,23 @@ user_pref("browser.search.openintab", true);
 
 user_pref("network.cookie.lifetimePolicy",2);
 
-// Mejora en Velocidad de peticion
+// Mejora en Velocidad de petición, si no sabes qué significa, solo ignorar:
 
 pref("network.http.pipelining",true);
 pref("network.http.proxy.pipelining",true);
 pref("network.http.pipelining.maxrequests",32);
 
-// Mejora Seguridad
+// Mejora Seguridad, usando SSL
 
 pref("network.http.pipelining.ssl",true);
 pref("network.http.proxy.pipelining",true);
 
-// se evita filtrar tu verdadera dirección IP
+// se evita filtrar tu verdadera dirección IP de alguna manera...
 
 pref("media.peerconnection.enabled", false);
 pref("media.peerconnection.use_document_iceservers", false);
 
-// Desactivar Pocket
+// Desactivar Pocket, un servicio irrelevante de Mozilla Firefox
 
 pref("browser.pocket.api", "");
 pref("browser.pocket.enabled", false);
@@ -158,7 +181,7 @@ pref("browser.pocket.site", "");
 pref("browser.pocket.useLocaleList", false);
 
 
-// Desactivar WebGL (Riesgo de seguridad
+// Desactivar WebGL Riesgo de seguridad
 // https://security.stackexchange.com/questions/13799/is-webgl-a-security-concern
 
 pref("webgl.disabled", true);
@@ -170,11 +193,11 @@ pref("network.http.referer.XOriginPolicy", 1);
 pref("network.http.sendRefererHeader", 0);
 pref("network.http.sendSecureXSiteReferrer", false);
 
-// deshabilitar completamente Hello
+// deshabilitar completamente Hello, otro servicio irrelevante de Mozilla Firefox
 
 pref("loop.enabled", false);
 
-// Deshabilitad por obsoleto
+// Deshabilitad por obsoleto varias opciones de cripto: 
 // https://community.qualys.com/blogs/securitylabs/2013/03/19/rc4-in-tls-is-broken-now-what
 //https://community.qualys.com/thread/14655
  
