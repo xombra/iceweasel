@@ -276,4 +276,21 @@ pref('security.OCSP.require', 'true');
 pref('services.sync.prefs.sync.security.OCSP.require', 'true');
 
 
+// Nuevo Hardering
+user_pref("browser.aboutHomeSnippets.updateUrl", "")
+user_pref("breakpad.reportURL", "");
+user_pref("breakpad.reportURL", "");
+user_pref("geo.wifi.uri", "");
+user_pref("extensions.pocket.api", "");
+user_pref("extensions.pocket.site", "");
+user_pref("toolkit.telemetry.server", "");
+user_pref("social.shareDirectory", "");
+user_pref("browser.safebrowsing.downloads.remote.enabled", false);
+user_pref("browser.fullscreen.animate", false);
+user_pref("extensions.pocket.enabled", false);
+user_pref("social.remoteinstall.enabled", false);
+user_pref("social.toastnotifications.enabled", false);
+user_pref("network.http.sendSecureXSiteReferrer", false);
+user_pref("browser.send_pings.require_same_host", true);
+user_pref("pdfjs.disabled", true);
 
