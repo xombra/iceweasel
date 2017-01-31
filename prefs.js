@@ -23,7 +23,7 @@ pref("browser.search.region", "");
 user_pref("browser.urlbar.autofill", true);
 
 // Deshabilita el JS de manera general, usarios avanzados que no necesiten JS.
-pref("javascript.enabled), false);
+pref("javascript.enabled"), false);
 
 // Deshabilita el analisis de los sensores, sitios web pueden leerlos.
 pref("device.sensors.enabled", false);
