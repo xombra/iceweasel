@@ -207,3 +207,10 @@ pref("security.ssl3.dhe_rsa_aes_256_sha", true);
 // Mostrar siempre http: en la barra de direcciones
 user_pref("browser.urlbar.trimURLs", false);
 pref("browser.formfill.enable", false);
+
+// Borra enlaces a Mozilla, que pueden espiarte...
+user_pref("browser.aboutHomeSnippets.updateUrl", "")
+user_pref("breakpad.reportURL", "");
+user_pref("breakpad.reportURL", "");
+user_pref("toolkit.telemetry.server", "");
+user_pref("social.shareDirectory", "");
